@@ -66,7 +66,9 @@ int main(void) {
   collection.push_back(&tmp_circle);
   collection.push_back(&tmp_circle);
   c_size = collection.size();
+  std::cout << "Connected to 'Database'" << std::endl; // We don't actually connect to anything
   std::cout << "Size of Collection: " << c_size << std::endl;
+  std::cout << "Collection Sorted" << std::endl; // We don't acutally sort because we don't know what to sort on
   for (int i=0; i<c_size; i++) {
     collection.at(i) -> display();
   }
